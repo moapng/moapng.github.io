@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Box from './Box.svelte';
+	import Box from '../lib/zcomponents/Box.svelte';
 
 	import '$lib/styles/common.scss';
 </script>
