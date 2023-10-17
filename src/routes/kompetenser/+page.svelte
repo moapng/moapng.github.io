@@ -1,9 +1,4 @@
 <script lang="ts">
-	import { getContext } from 'svelte';
-	import type { Writable } from 'svelte/store';
-
-	const currentColour: Writable<string> = getContext('currentColour');
-	currentColour.set('#C4F4CF');
 </script>
 
 <div class="content">
@@ -14,16 +9,20 @@
 </div>
 
 <style lang="scss">
+	@import '$lib/styles/variables.scss';
 	.content {
 		z-index: 2;
 
 		display: flex;
 	}
-
+	h1 {
+		color: $lavender;
+	}
 	.text {
 		z-index: 2;
 
-		text-align: left;
-		width: 33rem;
+		text-align: center;
+		width: 44rem;
+		margin: auto;
 	}
 </style>

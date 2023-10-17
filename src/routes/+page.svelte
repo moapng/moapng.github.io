@@ -1,10 +1,5 @@
 <script lang="ts">
 	import selfieSrc from '$lib/styles/moa.png';
-	import { getContext } from 'svelte';
-	import type { Writable } from 'svelte/store';
-
-	const currentColour: Writable<string> = getContext('currentColour');
-	currentColour.set('#D7B9FE');
 </script>
 
 <div class="content">
