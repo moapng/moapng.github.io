@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import '$lib/styles/variables.scss';
 
 @font-face {
@@ -19,6 +16,9 @@
 	src: url('$lib/styles/Rounded_Elegance.eot'); /* IE9 Compat Modes */
 	src: local('Fladeo'), url('$lib/styles/Rounded_Elegance.eot') format('embedded-opentype'),
 		/* Modern Browsers */ url('$lib/styles/Rounded_Elegance.ttf') format('truetype');
+}
+* {
+	box-sizing: border-box;
 }
 body {
 	margin: 0;

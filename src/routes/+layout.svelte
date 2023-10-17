@@ -25,7 +25,10 @@
 		border-radius: 0rem 0rem 4.375rem 4.375rem;
 		background: $lavender-dark;
 		margin: auto;
+		margin-bottom: 8.4rem;
 		text-align: center;
-		width: 40vw;
+		width: 54.0625rem;
+		height: 5.625rem;
+		flex-shrink: 0;
 	}
 </style>
