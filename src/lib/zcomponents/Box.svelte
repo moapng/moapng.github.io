@@ -10,7 +10,7 @@
 		<Circle colour={lavender} href="/" />
 		<Circle colour={lime} href="/kompetenser" />
 		<Circle colour={lavender} href="/projekt" />
-		<Circle colour={lime} href="/länkträd" />
+		<!-- <Circle colour={lime} href="/länkträd" /> -->
 	</nav>
 
 	<slot />
