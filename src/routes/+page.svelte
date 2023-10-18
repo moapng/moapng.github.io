@@ -17,14 +17,18 @@
 </div>
 
 <style lang="scss">
+	@import '$lib/styles/variables.scss';
 	.content {
 		z-index: 2;
 
 		display: flex;
 	}
+	h1 {
+		color: $lime;
+	}
 
 	img {
-		z-index: 2;
+		z-index: inherit;
 
 		width: 18.8125rem;
 		height: 24.8125rem;
@@ -33,9 +37,8 @@
 		border-radius: 2.3125rem;
 	}
 	.text {
-		z-index: 2;
+		z-index: inherit;
 
 		text-align: left;
-		width: 33rem;
 	}
 </style>

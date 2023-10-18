@@ -19,6 +19,8 @@
 
 		text-align: center;
 		width: 54rem;
-		margin: auto;
+	}
+	h1 {
+		margin-top: 5.6rem;
 	}
 </style>
