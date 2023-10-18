@@ -1,53 +1,38 @@
 <script lang="ts">
-	import { writable, type Writable } from 'svelte/store';
+	import { writable } from 'svelte/store';
 	import Circle from './Circle.svelte';
 	import { page } from '$app/stores';
+	import type { ICircle } from '$lib/Interfaces';
 
 	const lavender: string = '#D7B9FE';
 	const lime: string = '#C4F4CF';
+	const circlesData: ICircle[] = [
+		{ path: '/', isActiveCircle: writable(true), colour: lavender },
+		{ path: '/kompetenser', isActiveCircle: writable(false), colour: lime },
+		{ path: '/projekt', isActiveCircle: writable(false), colour: lavender }
+	];
 
-	const pathname: Writable<string> = writable($page.url.pathname);
-
-	const isActiveCircle1: Writable<boolean> = writable($pathname === '/');
-	const isActiveCircle2: Writable<boolean> = writable(false);
-	const isActiveCircle3: Writable<boolean> = writable(false);
+	// Update the active circle based on the current pathname
+	$: {
+		circlesData.forEach((circle) => {
+			circle.isActiveCircle.set(circle.path === $page.url.pathname);
+		});
+	}
 </script>
 
 <div class="box">
 	<nav class="circle-row">
-		{#key $pathname}
+		{#each circlesData as circle (circle.path)}
 			<Circle
-				colour={lavender}
-				href="/"
-				isActiveCircle={isActiveCircle1}
+				colour={circle.colour}
+				href={circle.path}
+				isActiveCircle={circle.isActiveCircle}
 				on:click={() => {
-					isActiveCircle1.set(true);
-					isActiveCircle2.set(false);
-					isActiveCircle3.set(false);
+					circlesData.forEach((c) => c.isActiveCircle.set(false));
+					circle.isActiveCircle.set(true);
 				}}
 			/>
-			<Circle
-				colour={lime}
-				href="/kompetenser"
-				isActiveCircle={isActiveCircle2}
-				on:click={() => {
-					isActiveCircle1.set(false);
-					isActiveCircle2.set(true);
-					isActiveCircle3.set(false);
-				}}
-			/>
-			<Circle
-				colour={lavender}
-				href="/projekt"
-				isActiveCircle={isActiveCircle3}
-				on:click={() => {
-					isActiveCircle1.set(false);
-					isActiveCircle2.set(false);
-					isActiveCircle3.set(true);
-				}}
-			/>
-		{/key}
-		<!-- <Circle colour={lime} href="/länkträd" /> -->
+		{/each}
 	</nav>
 
 	<slot />
