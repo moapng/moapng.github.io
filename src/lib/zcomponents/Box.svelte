@@ -1,15 +1,52 @@
 <script lang="ts">
+	import { writable, type Writable } from 'svelte/store';
 	import Circle from './Circle.svelte';
+	import { page } from '$app/stores';
 
 	const lavender: string = '#D7B9FE';
 	const lime: string = '#C4F4CF';
+
+	const pathname: Writable<string> = writable($page.url.pathname);
+
+	const isActiveCircle1: Writable<boolean> = writable($pathname === '/');
+	const isActiveCircle2: Writable<boolean> = writable(false);
+	const isActiveCircle3: Writable<boolean> = writable(false);
 </script>
 
 <div class="box">
 	<nav class="circle-row">
-		<Circle colour={lavender} href="/" />
-		<Circle colour={lime} href="/kompetenser" />
-		<Circle colour={lavender} href="/projekt" />
+		{#key $pathname}
+			<Circle
+				colour={lavender}
+				href="/"
+				isActiveCircle={isActiveCircle1}
+				on:click={() => {
+					isActiveCircle1.set(true);
+					isActiveCircle2.set(false);
+					isActiveCircle3.set(false);
+				}}
+			/>
+			<Circle
+				colour={lime}
+				href="/kompetenser"
+				isActiveCircle={isActiveCircle2}
+				on:click={() => {
+					isActiveCircle1.set(false);
+					isActiveCircle2.set(true);
+					isActiveCircle3.set(false);
+				}}
+			/>
+			<Circle
+				colour={lavender}
+				href="/projekt"
+				isActiveCircle={isActiveCircle3}
+				on:click={() => {
+					isActiveCircle1.set(false);
+					isActiveCircle2.set(false);
+					isActiveCircle3.set(true);
+				}}
+			/>
+		{/key}
 		<!-- <Circle colour={lime} href="/länkträd" /> -->
 	</nav>
 

@@ -1,30 +1,30 @@
 <script lang="ts">
 	import { spring } from 'svelte/motion';
+	import type { Writable } from 'svelte/store';
 
 	export let colour: string;
 	export let href: string;
-
+	export let isActiveCircle: Writable<boolean>;
 	let coords = spring({ x: 0, y: 0 }, { stiffness: 0.1, damping: 0.1 });
 	let isBig: boolean = false;
 
 	const moveCircle = () => {
 		coords.set({ x: 1, y: 1 });
 		isBig = true;
+		isActiveCircle.set(true);
 	};
 
 	const resetCircle = () => {
 		coords.set({ x: 0, y: 0 });
 		isBig = false;
+		isActiveCircle.set(false);
 	};
+
+	$: if ($isActiveCircle) moveCircle();
+	$: if (!$isActiveCircle) resetCircle();
 </script>
 
-<a
-	{href}
-	on:click={moveCircle}
-	on:keydown={(e) => e.key === 'Enter' && moveCircle}
-	on:mouseleave={resetCircle}
-	tabindex="0"
->
+<a {href} on:click>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="30"
