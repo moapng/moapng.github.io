@@ -21,10 +21,25 @@
 	box-sizing: border-box;
 	color: $black;
 	font-family: Rounded Elegance;
-	font-size: 1rem;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 2rem; 
+	line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+	* {
+		font-size: 12px;
+	}
+}
+@media (min-width: 1280px) {
+	* {
+		font-size: 14px;
+	}
+}
+@media (min-width: 1920px) {
+	* {
+		font-size: 16px;
+	}
 }
 body {
 	margin: 0;
@@ -36,13 +51,14 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-p, li {
+p,
+li {
 	color: $black;
 	font-family: Rounded Elegance;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 2rem; /* 133.333% */
+	line-height: 2rem;
 }
 h1 {
 	color: $lime;
