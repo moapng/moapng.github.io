@@ -3,6 +3,11 @@
 	import TsSvg from '$lib/components/svgs/TsSvg.svelte';
 	import ReactSvg from '$lib/components/svgs/ReactSvg.svelte';
 	import SvelteSvg from '$lib/components/svgs/SvelteSvg.svelte';
+	import HtmlSvg from '$lib/components/svgs/HtmlSvg.svelte';
+	import CssSvg from '$lib/components/svgs/CssSvg.svelte';
+	import NpmSvg from '$lib/components/svgs/NpmSvg.svelte';
+	import NodeSvg from '$lib/components/svgs/NodeSvg.svelte';
+	import CSvg from '$lib/components/svgs/CSvg.svelte';
 </script>
 
 <div class="content">
@@ -18,13 +23,13 @@
 				<li><JsSvg />JavaScript</li>
 			</ul>
 			<ul>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>npm</li>
-				<li>nodeJS</li>
+				<li><HtmlSvg />HTML5</li>
+				<li><CssSvg />CSS3</li>
+				<li><NpmSvg />npm</li>
+				<li><NodeSvg />nodeJS</li>
 			</ul>
 			<ul>
-				<li>C#</li>
+				<li><CSvg/> C#</li>
 				<li>SQL</li>
 				<li>Postman</li>
 			</ul>
