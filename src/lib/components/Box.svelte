@@ -49,7 +49,6 @@
 		border-radius: 4.375rem;
 
 		margin: auto;
-		margin-top: 8rem;
 
 		padding: 2rem 5rem;
 

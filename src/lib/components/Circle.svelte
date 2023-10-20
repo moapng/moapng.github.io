@@ -1,12 +1,15 @@
 <script lang="ts">
 	import { spring } from 'svelte/motion';
 	import type { Writable } from 'svelte/store';
+	import { tweened } from 'svelte/motion';
+	import { cubicOut } from 'svelte/easing';
 
 	export let colour: string;
 	export let href: string;
 	export let isActiveCircle: Writable<boolean>;
 	export let xAxis: number;
-	let coords = spring({ x: 0, y: 0 }, { stiffness: 0.1, damping: 0.7 });
+	// let coords = spring({ x: 0, y: 0 }, { stiffness: 0.1, damping: 0.7 });
+	let coords = tweened({ x: 0, y: 0 }, { duration: 400, easing: cubicOut });
 	let isBig: boolean = false;
 
 	const moveCircle = () => {
@@ -45,6 +48,7 @@
 		width: 3.75rem;
 	}
 	a svg {
+		transition: width 1s;
 		width: 3.1rem;
 		height: 3.1rem;
 
