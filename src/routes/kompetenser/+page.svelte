@@ -8,6 +8,7 @@
 	import NpmSvg from '$lib/components/svgs/NpmSvg.svelte';
 	import NodeSvg from '$lib/components/svgs/NodeSvg.svelte';
 	import CSvg from '$lib/components/svgs/CSvg.svelte';
+	import SqlSvg from '$lib/components/svgs/SqlSvg.svelte';
 </script>
 
 <div class="content">
@@ -29,8 +30,8 @@
 				<li><NodeSvg />nodeJS</li>
 			</ul>
 			<ul>
-				<li><CSvg/> C#</li>
-				<li>SQL</li>
+				<li><CSvg /> C#</li>
+				<li><SqlSvg />SQL</li>
 				<li>Postman</li>
 			</ul>
 			<ul>

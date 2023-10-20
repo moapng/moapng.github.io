@@ -1,18 +1,13 @@
-<svg
-	viewBox="0 0 32 32"
-	version="1.1"
-	xmlns="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
->
-	<g id="container" fill="#edb6a4" fill-rule="nonzero" stroke="#6A1A00" stroke-width="1">
-		<rect id="mask" width="32" height="32" rx="20%" />
-	</g>
-	<g id="SVGRepo_iconCarrier" transform="translate(2.000000, 2.000000), scale(0.9)">
-		<path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26" />
-		<path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529" />
-		<path
-			d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
-			fill="white"
-		/>
-	</g>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect x="0.5" y="0.5" width="31" height="31" rx="7.5" fill="#FFC9B3" />
+	<path
+		d="M7.64286 25.5357L6 5H25.7143L24.0714 25.5357L15.8571 28L7.64286 25.5357Z"
+		fill="#E44D26"
+	/>
+	<path d="M24.0715 6.64282H15.8572V26.7678L22.4286 24.7143L24.0715 6.64282Z" fill="#F16529" />
+	<path
+		d="M10.518 16.9106L9.69653 9.10706H22.4287L22.018 11.5713H12.1608L12.5715 14.4463H21.6072L20.7858 22.2499L15.8572 23.8928L10.9287 22.2499L10.518 18.1428H12.9822L13.393 20.1963L15.8572 21.0178L18.3215 20.1963L18.7322 16.9106H10.518Z"
+		fill="white"
+	/>
+	<rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#9A412A" />
 </svg>
