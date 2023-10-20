@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { spring } from 'svelte/motion';
 	import type { Writable } from 'svelte/store';
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
@@ -58,8 +57,6 @@
 		z-index: 1;
 
 		position: absolute;
-		// top: 8rem;
-		// left: 23.4rem;
 
 		width: 20rem;
 		height: 20rem;
