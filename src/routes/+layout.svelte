@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Box from '../lib/zcomponents/Box.svelte';
+	import Box from '../lib/components/Box.svelte';
 
 	import '$lib/styles/common.scss';
 </script>
@@ -27,8 +27,8 @@
 		margin: auto;
 		margin-bottom: 8.4rem;
 		text-align: center;
-		width: 54.0625rem;
-		height: 5.625rem;
+		width: 52rem;
+		height: 5rem;
 		flex-shrink: 0;
 	}
 </style>

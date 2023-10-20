@@ -20,10 +20,11 @@
 	@import '$lib/styles/variables.scss';
 	.content {
 		z-index: 2;
-
+		margin: auto;
 		display: flex;
 	}
 	h1 {
+		margin-top: 1rem;
 		color: $lime;
 	}
 
@@ -39,6 +40,8 @@
 	.text {
 		z-index: inherit;
 
+		width: 30rem;
+		padding-right: 2rem;
 		text-align: left;
 	}
 </style>

@@ -5,11 +5,12 @@
 	export let colour: string;
 	export let href: string;
 	export let isActiveCircle: Writable<boolean>;
-	let coords = spring({ x: 0, y: 0 }, { stiffness: 0.1, damping: 0.1 });
+	export let xAxis: number;
+	let coords = spring({ x: 0, y: 0 }, { stiffness: 0.1, damping: 0.7 });
 	let isBig: boolean = false;
 
 	const moveCircle = () => {
-		coords.set({ x: 1, y: 1 });
+		coords.set({ x: xAxis, y: 7 });
 		isBig = true;
 		isActiveCircle.set(true);
 	};
@@ -44,8 +45,8 @@
 		width: 3.75rem;
 	}
 	a svg {
-		width: 3.75rem;
-		height: 3.75rem;
+		width: 3.1rem;
+		height: 3.1rem;
 
 		flex-shrink: 0;
 	}
@@ -53,11 +54,11 @@
 		z-index: 1;
 
 		position: absolute;
-		top: 8rem;
-		left: 23.4rem;
+		// top: 8rem;
+		// left: 23.4rem;
 
-		width: 21.25rem;
-		height: 21.25rem;
+		width: 20rem;
+		height: 20rem;
 
 		flex-shrink: 0;
 	}
