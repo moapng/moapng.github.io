@@ -1,5 +1,4 @@
 <script lang="ts">
-	import selfieSrc from '$lib/styles/images/moa.png';
 </script>
 
 <div class="content">
@@ -13,7 +12,7 @@
 			form och stil; vi öppnar bara dörren för att fler skall kunna ta till sig designen
 		</p>
 	</div>
-	<img src={selfieSrc} alt="bild på Moa i London framför London Eye" />
+	<img src="/moa.png" alt="bild på Moa i London framför London Eye" />
 </div>
 
 <style lang="scss">

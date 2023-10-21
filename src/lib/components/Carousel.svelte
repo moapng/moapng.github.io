@@ -1,8 +1,5 @@
 <script lang="ts">
-	import gymnasieantagningen from '$lib/styles/images/gymnasieantagningen.png';
 	import { writable, type Writable } from 'svelte/store';
-	// Skicka in [] med img.src, text och kompetenser använda, on:click +- index
-	// setInterval trigga on:click
 
 	export let projectData: any;
 
@@ -32,7 +29,7 @@
 			/>
 		</svg>
 	</button>
-	<img src={gymnasieantagningen} alt="Bild på gymnasieantagningswebben" />
+	<img src="/gymnasieantagningen.png" alt="Bild på gymnasieantagningswebben" />
 	<div class="text">
 		<p>
 			{projectData[$index].text}
