@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="content">
+<div class="content grid">
 	<div class="text">
 		<h1>Vem e’ jag?</h1>
 		<p>
@@ -20,7 +20,12 @@
 	.content {
 		z-index: 2;
 		margin: auto;
-		display: flex;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 60% auto;
+
+		margin-top: 1rem;
 	}
 	h1 {
 		margin-top: 1rem;
@@ -30,17 +35,15 @@
 	img {
 		z-index: inherit;
 
-		width: 18.8125rem;
-		height: 24.8125rem;
+		width: 16rem;
+		height: 22rem;
 
 		flex-shrink: 0;
 		border-radius: 2.3125rem;
 	}
 	.text {
 		z-index: inherit;
-
 		width: 30rem;
-		padding-right: 2rem;
 		text-align: left;
 	}
 </style>

@@ -61,7 +61,10 @@
 		display: grid;
 		grid-template-columns: auto auto auto auto;
 	}
-
+	ul {
+		padding: 1rem 0;
+		margin: 0 auto;
+	}
 	li {
 		display: flex;
 		align-items: center;
