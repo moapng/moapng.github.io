@@ -1,5 +1,5 @@
 <script lang="ts">
-	import selfieSrc from '$lib/styles/moa.png';
+	import selfieSrc from '$lib/styles/images/moa.png';
 </script>
 
 <div class="content">
