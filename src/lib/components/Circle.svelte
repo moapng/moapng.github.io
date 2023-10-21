@@ -50,8 +50,6 @@
 		transition: width 1s;
 		width: 3.1rem;
 		height: 3.1rem;
-
-		flex-shrink: 0;
 	}
 	.circle {
 		z-index: 1;
@@ -60,7 +58,5 @@
 
 		width: 20rem;
 		height: 20rem;
-
-		flex-shrink: 0;
 	}
 </style>

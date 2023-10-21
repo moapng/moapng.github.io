@@ -19,7 +19,6 @@
 	.app {
 		margin: auto;
 		text-align: center;
-		flex-shrink: 0;
 	}
 	.header {
 		border-radius: 0rem 0rem 4.375rem 4.375rem;
@@ -32,7 +31,5 @@
 		margin-bottom: 4rem;
 
 		text-align: center;
-
-		flex-shrink: 0;
 	}
 </style>

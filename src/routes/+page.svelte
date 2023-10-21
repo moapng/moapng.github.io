@@ -34,15 +34,18 @@
 
 	img {
 		z-index: inherit;
+		border-radius: 2.3125rem;
+		border: 1px solid $black;
 
 		width: 16rem;
 		height: 22rem;
 
-		flex-shrink: 0;
-		border-radius: 2.3125rem;
+		margin-left: auto;
+		margin-right: 0;
 	}
 	.text {
 		z-index: inherit;
+
 		width: 30rem;
 		text-align: left;
 	}

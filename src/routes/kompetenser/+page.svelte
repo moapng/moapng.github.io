@@ -69,7 +69,7 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 1.5rem;
-		gap: 1rem;
+		column-gap: 1rem;
 	}
 
 	:global(svg) {

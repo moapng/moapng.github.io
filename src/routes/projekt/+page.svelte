@@ -3,13 +3,15 @@
 
 	const projectData = [
 		{
-			imgSrc: '$lib/styles/images/gymnasieantagningen.png',
+			title: 'Gymnasieantagningen',
+			imgSrc: '/gymnasieantagningen.png',
 			text: 'Mitt första uppdrag var hos Göteborgs Regionen, där jag bl.a. tillgänglighetsanpassade samt förvaltade deras befintliga webb.',
-			skills: ['React', 'WCAG', 'C#', 'SQL']
+			skills: ['React', 'WCAG', 'C#', 'SQL', 'Azure Devops']
 		},
 		{
-			imgSrc: '$lib/styles/images/gymnasieantagningen.png',
-			text: 'Volvo Lastvagnar',
+			title: 'Volvo Lastvagnar',
+			imgSrc: '/volvolastvagnar.png',
+			text: 'Hos Volvo Lastvagnar fick jag lära mig jobba i ett större team och att följa scrum-principerna till punkt och pricka. Det var även här som jag stötte på SvelteKit för första gången, och det var kärlek vid första ögonkastet. Sen dess har jag byggt alla hobby-projekt med det.',
 			skills: ['SvelteKit', 'WCAG', 'C#', 'SQL', 'Azure Devops', 'Scrum']
 		}
 	];

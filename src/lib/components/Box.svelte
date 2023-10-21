@@ -48,19 +48,21 @@
 		background: $lavender-dark;
 		border-radius: 4.375rem;
 
+
 		margin: auto;
 
-		padding: 2rem 5rem;
+		padding: 2rem 9rem;
 
 		width: 64rem;
 		height: 35rem;
-
-		flex-shrink: 0;
 	}
 
 	.circle-row {
+		position: relative;
+		right: 4rem;
+
 		display: flex;
 		padding-bottom: 2rem;
-		gap: 2rem;
+		column-gap: 2rem;
 	}
 </style>

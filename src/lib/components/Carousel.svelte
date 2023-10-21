@@ -29,17 +29,16 @@
 			/>
 		</svg>
 	</button>
-	<img src="/gymnasieantagningen.png" alt="Bild på gymnasieantagningswebben" />
-	<div class="text">
-		<p>
-			{projectData[$index].text}
-		</p>
-		<ul>
-			{#each projectData[$index].skills as skill}
-				<li>{skill}</li>
-			{/each}
-		</ul>
-	</div>
+	{#key $index}
+		<img src={projectData[$index].imgSrc} alt="Bild på gymnasieantagningswebben" />
+		<div class="text">
+			<h2>{projectData[$index].title}</h2>
+
+			<p>
+				{projectData[$index].text}
+			</p>
+		</div>
+	{/key}
 	<button class="right" on:click={increase}>
 		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
@@ -52,31 +51,46 @@
 
 <style lang="scss">
 	@import '$lib/styles/variables.scss';
+	h2 {
+		font-weight: 600;
+	}
 	img {
 		border-radius: 2.3125rem;
+		border: 1px solid $black;
 
-		width: 30rem;
+		max-width: 100%;
+		max-height: 100%;
 
-		flex-shrink: 0;
+		margin-top: 3rem;
 	}
 
 	.grid {
 		display: grid;
-		grid-template-columns: 60% auto;
-
-		margin-top: 1rem;
+		grid-template-columns: 50% auto;
+		grid-template-rows: 20rem;
+		gap: 1rem;
 	}
 
 	.text {
 		text-align: left;
+
+		margin-left: auto;
+		margin-right: 0;
+	}
+	.text p {
+		margin-top: 0;
 	}
 
 	ul {
 		position: absolute;
 		bottom: 0;
 
+		padding: 0;
+
 		display: flex;
-		gap: 1rem;
+		flex-wrap: wrap;
+
+		column-gap: 1rem;
 	}
 
 	button {
@@ -85,10 +99,9 @@
 
 		position: absolute;
 		top: 11rem;
-	}
-	button:hover {
 		cursor: pointer;
 	}
+
 	button.left {
 		border-radius: 2rem 0 0 2rem;
 
