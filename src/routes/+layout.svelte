@@ -24,11 +24,15 @@
 	.header {
 		border-radius: 0rem 0rem 4.375rem 4.375rem;
 		background: $lavender-dark;
-		margin: auto;
-		margin-bottom: 8.4rem;
-		text-align: center;
-		width: 52rem;
+
+		width: 40rem;
 		height: 5rem;
+		padding: 1rem;
+		margin: auto;
+		margin-bottom: 4rem;
+
+		text-align: center;
+
 		flex-shrink: 0;
 	}
 </style>

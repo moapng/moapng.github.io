@@ -7,7 +7,7 @@
 	export let href: string;
 	export let isActiveCircle: Writable<boolean>;
 	export let xAxis: number;
-	// let coords = spring({ x: 0, y: 0 }, { stiffness: 0.1, damping: 0.7 });
+
 	let coords = tweened({ x: 0, y: 0 }, { duration: 400, easing: cubicOut });
 	let isBig: boolean = false;
 

@@ -12,6 +12,7 @@
 	import ScrumSvg from '$lib/components/svgs/ScrumSvg.svelte';
 	import A11ySvg from '$lib/components/svgs/A11ySvg.svelte';
 	import PostmanSvg from '$lib/components/svgs/PostmanSvg.svelte';
+	import FigmaSvg from '$lib/components/svgs/FigmaSvg.svelte';
 </script>
 
 <div class="content">
@@ -32,13 +33,14 @@
 			<li><NodeSvg />nodeJS</li>
 		</ul>
 		<ul>
+			<li><A11ySvg />WCAG</li>
+			<li><FigmaSvg />Figma</li>
+			<li><ScrumSvg /> Scrum</li>
+		</ul>
+		<ul>
 			<li><CSvg /> C#</li>
 			<li><SqlSvg />SQL</li>
 			<li><PostmanSvg />Postman</li>
-		</ul>
-		<ul>
-			<li><A11ySvg />WCAG</li>
-			<li><ScrumSvg /> Scrum</li>
 		</ul>
 	</div>
 </div>
