@@ -22,9 +22,9 @@
 
 		overflow: hidden;
 		text-overflow: hidden;
-		:hover {
-			animation-play-state: paused;
-		}
+	}
+	.scroll-container:hover {
+		animation-play-state: paused;
 	}
 	ul {
 		display: flex;
