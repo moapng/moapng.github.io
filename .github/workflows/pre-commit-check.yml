@@ -21,16 +21,18 @@ jobs:
         with:
           node-version: 14
 
-      # - name: Install Dependencies
-      #   run: npm ci
+      - name: Install Dependencies
+        run: npm ci
 
       - name: Build
         run: npm run build
 
       - name: Check Build Status
         run: |
-          if [ ${{ steps.build.outcome }} == 'success' ]; then
-            echo "Build was successful."
-          else
-            echo "Build failed. Exiting the workflow."
-            exit 1
+          for step in ${{ job.steps.*.id }}; do
+            if [[ "${{ job.steps[steps].outcome }}" != "success" ]]; then
+              echo "Step $step failed. Exiting the workflow."
+              exit 1
+            fi
+          done
+          echo "All steps were successful."
