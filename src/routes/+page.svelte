@@ -1,6 +1,8 @@
 <script lang="ts">
 </script>
 
+<svelte:head><title>Moas portfolio</title></svelte:head>
+
 <div class="content grid">
 	<div class="text">
 		<h1>Vem e’ jag?</h1>

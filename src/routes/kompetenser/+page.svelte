@@ -15,6 +15,8 @@
 	import FigmaSvg from '$lib/components/svgs/FigmaSvg.svelte';
 </script>
 
+<svelte:head><title>Moas kompetenser</title></svelte:head>
+
 <div class="content">
 	<h1>Mina kompetenser</h1>
 	<div class="grid">

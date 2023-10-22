@@ -17,6 +17,8 @@
 	];
 </script>
 
+<svelte:head><title>Moas projekt</title></svelte:head>
+
 <div class="content">
 	<h1>Projekt jag jobbat med</h1>
 	<Carousel {projectData} />
