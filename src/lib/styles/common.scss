@@ -4,25 +4,25 @@
 	font-family: 'Fladeo';
 	font-style: normal;
 	font-weight: 400;
-	src: url('$lib/styles/Fladeo.eot'); /* IE9 Compat Modes */
-	src: local('Fladeo'), url('$lib/styles/Fladeo.eot') format('embedded-opentype'),
-		/* Modern Browsers */ url('$lib/styles/Fladeo.ttf') format('truetype');
+	src: url('$lib/styles/fonts/Fladeo.eot'); /* IE9 Compat Modes */
+	src: local('Fladeo'), url('$lib/styles/fonts/Fladeo.eot') format('embedded-opentype'),
+		/* Modern Browsers */ url('$lib/styles/fonts/Fladeo.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'Rounded Elegance';
+	font-family: 'Comfortaa';
 	font-style: normal;
-	font-weight: 400;
-	src: url('$lib/styles/Rounded_Elegance.eot'); /* IE9 Compat Modes */
-	src: local('Fladeo'), url('$lib/styles/Rounded_Elegance.eot') format('embedded-opentype'),
-		/* Modern Browsers */ url('$lib/styles/Rounded_Elegance.ttf') format('truetype');
+	font-weight: 500;
+	src: url('$lib/styles/fonts/Comfortaa.ttf'); /* IE9 Compat Modes */
+	src: local('Comfortaa'), url('$lib/styles/fonts/Comfortaa.eot') format('embedded-opentype'),
+		/* Modern Browsers */ url('$lib/styles/fonts/Comfortaa.ttf') format('truetype');
 }
 * {
 	box-sizing: border-box;
 	color: $black;
-	font-family: Rounded Elegance;
+	font-family: Comfortaa;
 	font-style: normal;
-	font-weight: 400;
+	font-size: 1rem;
 	line-height: 2rem;
 }
 
@@ -54,8 +54,8 @@ body {
 p,
 li {
 	color: $black;
-	font-family: Rounded Elegance;
-	font-size: 1rem;
+	font-family: Comfortaa;
+	font-size: 1;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 2rem;

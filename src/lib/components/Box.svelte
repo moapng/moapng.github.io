@@ -51,15 +51,15 @@
 
 		margin: auto;
 
-		padding: 2rem 9rem;
+		padding: 2rem 7rem;
 
-		width: 64rem;
-		height: 35rem;
+		width: 68rem;
+		height: 38rem;
 	}
 
 	.circle-row {
 		position: relative;
-		right: 4rem;
+		right: 2rem;
 
 		display: flex;
 		padding-bottom: 2rem;
