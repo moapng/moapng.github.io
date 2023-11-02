@@ -5,4 +5,5 @@ export interface ICircle {
 	isActiveCircle: Writable<boolean>;
 	colour: string;
 	xAxis: number;
+	icon: string;
 }

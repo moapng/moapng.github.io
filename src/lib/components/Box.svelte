@@ -7,9 +7,34 @@
 	const lavender: string = '#D7B9FE';
 	const lime: string = '#C4F4CF';
 	const circlesData: ICircle[] = [
-		{ path: '/', isActiveCircle: writable(true), colour: lavender, xAxis: 15.1 },
-		{ path: '/kompetenser', isActiveCircle: writable(false), colour: lime, xAxis: 9.4 },
-		{ path: '/projekt', isActiveCircle: writable(false), colour: lavender, xAxis: 3.6 }
+		{
+			path: '/',
+			isActiveCircle: writable(true),
+			colour: lavender,
+			xAxis: 15.1,
+			icon: '/icons/moaicon.svg'
+		},
+		{
+			path: '/kompetenser',
+			isActiveCircle: writable(false),
+			colour: lime,
+			xAxis: 9.4,
+			icon: '/icons/kompetensericon.svg'
+		},
+		{
+			path: '/projekt',
+			isActiveCircle: writable(false),
+			colour: lavender,
+			xAxis: 5.6,
+			icon: '/icons/projekticon.svg'
+		},
+		{
+			path: '/kontakt',
+			isActiveCircle: writable(false),
+			colour: lime,
+			xAxis: -0.1,
+			icon: '/icons/kontakticon.svg'
+		}
 	];
 
 	// Update the active circle based on the current pathname
@@ -28,6 +53,7 @@
 				href={circle.path}
 				isActiveCircle={circle.isActiveCircle}
 				xAxis={circle.xAxis}
+				icon={circle.icon}
 				on:click={() => {
 					circlesData.forEach((c) => c.isActiveCircle.set(false));
 					circle.isActiveCircle.set(true);
@@ -47,7 +73,6 @@
 
 		background: $lavender-dark;
 		border-radius: 4.375rem;
-
 
 		margin: auto;
 

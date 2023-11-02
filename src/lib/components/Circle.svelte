@@ -7,6 +7,7 @@
 	export let href: string;
 	export let isActiveCircle: Writable<boolean>;
 	export let xAxis: number;
+	export let icon: string;
 
 	let coords = tweened({ x: 0, y: 0 }, { duration: 400, easing: cubicOut });
 	let isBig: boolean = false;
@@ -27,7 +28,7 @@
 	$: if (!$isActiveCircle) resetCircle();
 </script>
 
-<a {href} on:click>
+<a {href} on:click class="flex">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="30"
@@ -38,6 +39,7 @@
 		class:circle={isBig}
 	>
 		<circle cx="15" cy="15" r="15" fill={colour} />
+		<image x="0" y="0" width="30" height="30" href={icon} class:opacity={isBig} />
 	</svg>
 </a>
 
@@ -50,6 +52,10 @@
 		transition: width 1s;
 		width: 3.1rem;
 		height: 3.1rem;
+	}
+	.opacity {
+		transition: opacity 1s;
+		opacity: 0.1;
 	}
 	.circle {
 		z-index: 1;
