@@ -39,7 +39,7 @@
 		class:circle={isBig}
 	>
 		<circle cx="15" cy="15" r="15" fill={colour} />
-		<image x="0" y="0" width="30" height="30" href={icon} class:opacity={isBig} />
+		<image x="2.5" y="2.5" width="25" height="25" href={icon} class:opacity={isBig} />
 	</svg>
 </a>
 
