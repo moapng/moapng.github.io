@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Carousel from '$lib/components/Carousel.svelte';
-
 	const projectData = [
 		{
 			title: 'Gymnasieantagningen',
@@ -10,29 +8,41 @@
 		},
 		{
 			title: 'Volvo Lastvagnar',
-			imgSrc: '/volvolastvagnar.png',
+			imgSrc: '/volvo1.png',
 			text: 'Hos Volvo Lastvagnar fick jag lära mig jobba i ett större team och att följa scrum-principerna till punkt och pricka. Det var även här som jag stötte på SvelteKit för första gången, och det var kärlek vid första ögonkastet. Sen dess har jag byggt alla hobby-projekt med det.',
 			skills: ['SvelteKit', 'WCAG', 'C#', 'SQL', 'Azure Devops', 'Scrum']
+		},
+		{
+			title: 'Nelly',
+			imgSrc: '/nelly.png',
+			text: '',
+			skills: ['SvelteKit']
+		},
+		{
+			title: 'Considition 2023',
+			imgSrc: '/considition1.png',
+			text: '',
+			skills: ['SvelteKit', 'WCAG', 'C#', 'SQL', 'Azure Devops']
 		}
 	];
 </script>
 
 <svelte:head><title>Moas projekt</title></svelte:head>
 
-<div class="content">
-	<h1>Projekt jag jobbat med</h1>
-	<Carousel {projectData} />
+<h1>Projekt jag jobbat med</h1>
+<div class="container">
+	{#each projectData as project}
+		<img class='item' src={project.imgSrc} alt={project.title} />
+	{/each}
 </div>
 
 <style lang="scss">
 	@import '$lib/styles/variables.scss';
-	.content {
-		z-index: 2;
-		position: relative;
-	}
 
-	h1 {
-		color: $lime;
-		margin-top: 2rem;
+	img {
+		border-radius: 1.5rem;
+		border: 1px solid $black;
+
+		width: 16rem;
 	}
 </style>

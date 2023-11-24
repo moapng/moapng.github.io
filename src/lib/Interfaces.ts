@@ -1,9 +1,7 @@
 import type { Writable } from 'svelte/store';
 
-export interface ICircle {
-	path: string;
-	isActiveCircle: Writable<boolean>;
-	colour: string;
-	xAxis: number;
-	icon: string;
+export interface ITab {
+	href: string;
+	active: Writable<boolean>;
+	title: string;
 }

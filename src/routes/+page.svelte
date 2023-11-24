@@ -3,52 +3,33 @@
 
 <svelte:head><title>Moas portfolio</title></svelte:head>
 
-<div class="content grid">
-	<div class="text">
-		<h1>Vem e’ jag?</h1>
-		<p>
-			En frontend-utvecklare som brinner för snygg design och tillgänglighet!
-			<br />
-			<br />
-			Webben skall vara lättläst och tillgänglig för alla, men det behöver inte betyda att vi tappar
-			form och stil; vi öppnar bara dörren för att fler skall kunna ta till sig designen
-		</p>
-	</div>
-	<img src="/moa.png" alt="bild på Moa i London framför London Eye" />
+<h1>Vem e’ jag?</h1>
+<div class="container">
+	<p class="text item">
+		En frontend-utvecklare som brinner för snygg design och tillgänglighet!
+		<br />
+		<br />
+		Webben skall vara lättläst och tillgänglig för alla, men det behöver inte betyda att vi tappar form
+		och stil; vi öppnar bara dörren för att fler skall kunna ta till sig designen
+	</p>
+	<img class="item" src="/moa.png" alt="bild på Moa i London framför London Eye" />
 </div>
 
 <style lang="scss">
 	@import '$lib/styles/variables.scss';
-	.content {
-		z-index: 2;
-		margin: auto;
-	}
-	.grid {
-		display: grid;
-		grid-template-columns: 60% auto;
-
-		margin-top: 1rem;
-	}
-	h1 {
-		margin-top: 1rem;
-		color: $lime;
-	}
 
 	img {
-		z-index: inherit;
 		border-radius: 2.3125rem;
 		border: 1px solid $black;
 
 		width: 16rem;
-		height: 22rem;
-
-		margin-left: auto;
-		margin-right: 0;
+		height: 100%;
 	}
-	.text {
-		z-index: inherit;
 
-		width: 30rem;
-		text-align: left;
+	.text.item {
+		flex-grow: 0;
+		flex-basis: 65%;
 	}
+
+
 </style>
