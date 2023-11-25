@@ -47,7 +47,7 @@
 		gap: 1rem;
 	}
 
-	:global(svg) {
+	:global(li svg) {
 		width: 3rem;
 		height: 3rem;
 	}

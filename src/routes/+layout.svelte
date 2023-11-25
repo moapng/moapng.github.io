@@ -20,7 +20,7 @@
 
 		width: 40rem;
 		height: 5rem;
-		
+
 		padding: 0.5rem;
 
 		margin: auto;

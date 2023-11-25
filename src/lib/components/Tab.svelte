@@ -28,6 +28,10 @@
 		color: $lime;
 		background: $lavender;
 	}
+	a:hover {
+		cursor: pointer;
+		scale: 1.1;
+	}
 
 	.active {
 		background: $lavender-light;

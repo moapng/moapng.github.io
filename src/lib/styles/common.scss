@@ -53,8 +53,6 @@ body {
 	height: 100%;
 
 	background: radial-gradient(86.3% 64.62% at 44.97% 50%, #bb90fe 0%, #bb90fe 54.17%, #a368ff 100%);
-
-	
 }
 p,
 li {
@@ -97,6 +95,12 @@ ul {
 	gap: 2rem;
 }
 
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .container .item {
 	flex-grow: 0;
 	flex-basis: 30%;
@@ -105,4 +109,50 @@ ul {
 *:focus-visible {
 	outline: 3px solid $focus;
 	outline-offset: 3px;
+}
+
+button {
+	border-radius: 1rem;
+	border: 0.1rem solid $lavender-dark;
+
+	background-color: $lavender-light;
+}
+button:hover {
+	background-color: $lime-light;
+	cursor: pointer;
+	scale: 1.2;
+}
+
+img {
+	border-radius: 1.5rem;
+	border: 0.1rem solid $lavender-dark;
+
+	object-fit: cover;
+}
+// scrollbar stuff
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: $lavender-light;
+	margin: 1.5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $lavender-dark;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $black;
+}
+
+
+* {
+	transition: 500ms;
 }

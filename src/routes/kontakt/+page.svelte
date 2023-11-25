@@ -26,7 +26,7 @@
 				errorMessage = 'Något gick snett... Försök igen lite senare';
 			}
 		} else {
-			errorMessage = 'Vänligen fyll i alla fält för att kunna skicka meddelandet'
+			errorMessage = 'Vänligen fyll i alla fält för att kunna skicka meddelandet';
 		}
 	};
 	$: name = '';
@@ -49,7 +49,7 @@
 		<label for="message">Meddelande *</label>
 		<textarea id="message" name="message" placeholder="Säg hej" class="text" bind:value={message} />
 
-		<input type="submit" value="Skicka" />
+		<button type="submit">Skicka</button>
 	</div>
 </form>
 {#if successMessage}
@@ -89,7 +89,7 @@
 	textarea {
 		background-color: $lavender-light;
 		border: 0.1rem solid $lavender-dark;
-		border-radius: 0.4rem;
+		border-radius: 1rem;
 
 		padding: 0.3rem;
 	}
@@ -98,7 +98,7 @@
 		background-color: $white;
 	}
 
-	input[type='submit'] {
+	button {
 		width: 30%;
 		align-self: flex-end;
 	}

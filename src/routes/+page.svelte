@@ -1,11 +1,13 @@
 <script lang="ts">
 </script>
 
-<svelte:head><title>Moas portfolio</title></svelte:head>
+<svelte:head>
+	<title>Moas portfolio</title>
+</svelte:head>
 
 <h1>Vem e’ jag?</h1>
 <div class="container">
-	<p class="text item">
+	<p class="item">
 		En frontend-utvecklare som brinner för snygg design och tillgänglighet!
 		<br />
 		<br />
@@ -19,17 +21,12 @@
 	@import '$lib/styles/variables.scss';
 
 	img {
-		border-radius: 2.3125rem;
-		border: 1px solid $black;
-
 		width: 16rem;
 		height: 100%;
 	}
 
-	.text.item {
+	p.item {
 		flex-grow: 0;
 		flex-basis: 65%;
 	}
-
-
 </style>

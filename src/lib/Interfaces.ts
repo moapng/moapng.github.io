@@ -5,3 +5,10 @@ export interface ITab {
 	active: Writable<boolean>;
 	title: string;
 }
+
+export interface IProject {
+	title: string;
+	imgSrc: string;
+	text: string;
+	skills: string[];
+}
