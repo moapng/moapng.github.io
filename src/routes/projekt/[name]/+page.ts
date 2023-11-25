@@ -1,6 +1,6 @@
 import type { IProject } from '$lib/Interfaces';
 import projects from '$lib/projectData.json';
-const prerender = false;
+export const prerender = false;
 
 export const load = ({ params }) => {
 	console.log(params);
