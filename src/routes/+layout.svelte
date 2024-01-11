@@ -1,14 +1,11 @@
 <script lang="ts">
-	import Box from '../lib/components/Box.svelte';
 	import '$lib/styles/common.scss';
 </script>
 
-<div class="header">
-	<h1>Moa</h1>
-</div>
-<Box>
+<div class="">
+	asd
 	<slot />
-</Box>
+</div>
 
 <style lang="scss">
 	@import '$lib/styles/variables.scss';
