@@ -1,28 +1,19 @@
 <script lang="ts">
+	import Sidebar from './Sidebar.svelte';
 	import '$lib/styles/common.scss';
+	import { setContext } from 'svelte';
+	import { writable, type Writable } from 'svelte/store';
+
+	const open: Writable<boolean> = writable(false);
+	setContext('open', open);
 </script>
 
-<div class="">
-	asd
+<Sidebar />
+
+<div class={$open ? 'ms-96' : 'ms-28'}>
+	' ajshydgbajshdb
 	<slot />
 </div>
 
 <style lang="scss">
-	@import '$lib/styles/variables.scss';
-
-	.header {
-		border-radius: 0rem 0rem 4.375rem 4.375rem;
-		background: linear-gradient(180deg, $lavender-light 0%, $lavender-dark 100%);
-		border: 0.5rem solid $lavender-light;
-
-		width: 40rem;
-		height: 5rem;
-
-		padding: 0.5rem;
-
-		margin: auto;
-		margin-bottom: 4rem;
-
-		text-align: center;
-	}
 </style>

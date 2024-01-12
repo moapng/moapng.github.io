@@ -8,7 +8,7 @@ export default {
 		themes: [
 			{
 				light: {
-					primary: '#DDC7FF',
+					primary: '#A26FF3',
 					'primary-focus': '#A26FF3',
 					'primary-content': '#A26FF3',
 
@@ -48,5 +48,6 @@ export default {
 			}
 		]
 	},
+
 	plugins: [require('daisyui')]
 };
