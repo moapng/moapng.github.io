@@ -6,53 +6,55 @@
 	let open: Writable<boolean> = getContext('open');
 </script>
 
-<nav class="absolute {$open ? 'w-96' : 'w-fit'} border-r-2 border-primary h-screen">
+<nav class="absolute {$open ? 'w-[320px]' : 'w-[82px]'}  border-r-2 border-primary h-full">
 	<ul class="menu bg-base-200 text-base-content p-0 m-0">
-		<button class="btn shadow-none h-20 justify-end mb-20" on:click={() => open.set(!$open)}>
-			{#if $open}
-				<svg
-					width="29"
-					height="45"
-					viewBox="0 0 29 45"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<g id="Frame">
-						<path
-							id="Vector"
-							d="M0.826172 20.5134C-0.272461 21.6121 -0.272461 23.3962 0.826172 24.4949L17.7012 41.3699C18.7998 42.4685 20.584 42.4685 21.6826 41.3699C22.7813 40.2712 22.7813 38.4871 21.6826 37.3884L6.79395 22.4998L21.6738 7.61108C22.7725 6.51245 22.7725 4.72827 21.6738 3.62964C20.5752 2.53101 18.791 2.53101 17.6924 3.62964L0.817383 20.5046L0.826172 20.5134Z"
-							fill="#A26FF3"
-						/>
-					</g>
-				</svg>
-			{:else}
-				<svg
-					width="29"
-					height="45"
-					viewBox="0 0 29 45"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<g id="aaaaa" clip-path="url(#clip0_194_107)">
-						<path
-							id="Vector"
-							d="M27.2988 20.5123C28.3975 21.6109 28.3975 23.395 27.2988 24.4937L10.4238 41.3685C9.32519 42.4671 7.54102 42.4671 6.44238 41.3685C5.34375 40.2699 5.34375 38.4857 6.44238 37.3871L21.3311 22.4986L6.45117 7.61006C5.35254 6.51144 5.35254 4.72727 6.45117 3.62865C7.5498 2.53003 9.33398 2.53003 10.4326 3.62865L27.3076 20.5035L27.2988 20.5123Z"
-							fill="#A26FF3"
-						/>
-					</g>
-					<defs>
-						<clipPath id="clip0_194_107">
-							<rect
-								width="28.125"
-								height="44.9995"
-								fill="white"
-								transform="translate(0 -0.000976562)"
+		<li>
+			<button class="h-20 border-b-2 border-primary justify-end pe-6 mb-20" on:click={() => open.set(!$open)}>
+				{#if $open}
+					<svg
+						width="29"
+						height="45"
+						viewBox="0 0 29 45"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g id="Frame">
+							<path
+								id="Vector"
+								d="M0.826172 20.5134C-0.272461 21.6121 -0.272461 23.3962 0.826172 24.4949L17.7012 41.3699C18.7998 42.4685 20.584 42.4685 21.6826 41.3699C22.7813 40.2712 22.7813 38.4871 21.6826 37.3884L6.79395 22.4998L21.6738 7.61108C22.7725 6.51245 22.7725 4.72827 21.6738 3.62964C20.5752 2.53101 18.791 2.53101 17.6924 3.62964L0.817383 20.5046L0.826172 20.5134Z"
+								fill="#A26FF3"
 							/>
-						</clipPath>
-					</defs>
-				</svg>
-			{/if}
-		</button>
+						</g>
+					</svg>
+				{:else}
+					<svg
+						width="29"
+						height="45"
+						viewBox="0 0 29 45"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g id="aaaaa" clip-path="url(#clip0_194_107)">
+							<path
+								id="Vector"
+								d="M27.2988 20.5123C28.3975 21.6109 28.3975 23.395 27.2988 24.4937L10.4238 41.3685C9.32519 42.4671 7.54102 42.4671 6.44238 41.3685C5.34375 40.2699 5.34375 38.4857 6.44238 37.3871L21.3311 22.4986L6.45117 7.61006C5.35254 6.51144 5.35254 4.72727 6.45117 3.62865C7.5498 2.53003 9.33398 2.53003 10.4326 3.62865L27.3076 20.5035L27.2988 20.5123Z"
+								fill="#A26FF3"
+							/>
+						</g>
+						<defs>
+							<clipPath id="clip0_194_107">
+								<rect
+									width="28.125"
+									height="44.9995"
+									fill="white"
+									transform="translate(0 -0.000976562)"
+								/>
+							</clipPath>
+						</defs>
+					</svg>
+				{/if}
+			</button>
+		</li>
 		<MenuItem title={'Vem är jag'} href="vem">
 			<svg
 				width="50"

@@ -10,7 +10,7 @@ export default {
 				light: {
 					primary: '#A26FF3',
 					'primary-focus': '#A26FF3',
-					'primary-content': '#A26FF3',
+					'primary-content': '#DDC7FF',
 
 					secondary: '#360089',
 					'secondary-focus': '#A26FF3',
