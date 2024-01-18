@@ -9,7 +9,10 @@
 <nav class="absolute {$open ? 'w-[320px]' : 'w-[82px]'}  border-r-2 border-primary h-full">
 	<ul class="menu bg-base-200 text-base-content p-0 m-0">
 		<li>
-			<button class="h-20 border-b-2 border-primary justify-end pe-6 mb-20" on:click={() => open.set(!$open)}>
+			<button
+				class="h-24 border-b-2 border-primary justify-end pe-10 pt-4 mb-20"
+				on:click={() => open.set(!$open)}
+			>
 				{#if $open}
 					<svg
 						width="29"
@@ -77,7 +80,7 @@
 				</defs>
 			</svg>
 		</MenuItem>
-		<MenuItem title={'Projekt jag jobbat med'} href="projekt">
+		<MenuItem title={'Projekt jag jobbat med'} href="/projekt/gr">
 			<svg
 				width="50"
 				height="50"

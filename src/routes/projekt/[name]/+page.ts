@@ -1,6 +1,7 @@
 import type { IProject } from '$lib/Interfaces';
 import projects from '$lib/projectData.json';
 import type { EntryGenerator } from './$types';
+import RightInfo from './RightInfo.svelte';
 
 export const entries: EntryGenerator = () => {
 	let entries: any = [];
@@ -13,19 +14,15 @@ export const entries: EntryGenerator = () => {
 
 export const prerender = true;
 
-export const load = ({ params }) => {
-	console.log(params);
+export const load = async ({ params }) => {
 	const { name } = params;
 
-	const project: IProject | undefined = projects.find(
-		(project: IProject) => project.title === name
-	);
-
-	if (!project) {
-		return { status: 404, error: new Error('Project not found') };
-	}
+	const project: IProject = projects.find((project: IProject) => project.title === name);
 
 	return {
-		project
+		title: project.title,
+		text: project.text,
+		skills: project.skills,
+		component: RightInfo
 	};
 };

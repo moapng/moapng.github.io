@@ -8,7 +8,6 @@ export interface ITab {
 
 export interface IProject {
 	title: string;
-	imgSrc: string;
 	text: string;
 	skills: string[];
 }

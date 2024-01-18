@@ -47,11 +47,6 @@
 		gap: 1rem;
 	}
 
-	:global(li svg) {
-		width: 3rem;
-		height: 3rem;
-	}
-
 	.container {
 		flex-direction: column;
 	}
