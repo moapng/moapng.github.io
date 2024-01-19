@@ -22,7 +22,7 @@
 		<button class="h-full btn btn-primary text-3xl font-Bungee">kontakt</button>
 	</div>
 	<div class="flex divide-x-2 divide-primary h-[calc(100%_-_6rem)]">
-		<section class="py-28 {$open ? 'px-10' : 'px-32'} w-1/2">
+		<section class="py-28 {$open ? 'px-10' : 'px-20'} w-1/2">
 			<slot />
 		</section>
 		<section class="py-28 px-40 w-1/2">

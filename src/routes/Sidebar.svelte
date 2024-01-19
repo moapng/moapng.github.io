@@ -6,7 +6,7 @@
 	let open: Writable<boolean> = getContext('open');
 </script>
 
-<nav class="absolute {$open ? 'w-[320px]' : 'w-[82px]'}  border-r-2 border-primary h-full">
+<nav class="fixed {$open ? 'w-[320px]' : 'w-[82px]'}  border-r-2 border-primary h-full">
 	<ul class="menu bg-base-200 text-base-content p-0 m-0">
 		<li>
 			<button
