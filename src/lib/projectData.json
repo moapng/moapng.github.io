@@ -16,7 +16,7 @@
 	},
 	{
 		"title": "considition",
-		"text": "Ansvarade över och byggde frontenden för årets Considition (detta år i samarbete med Coca Cola Sverige).<br><br> Webben bestod av en dashboard med high-score-tavla och annat matnyttigt, en sida där spelare kunde visualisera resultatet av sina algoritmer på en karta, en sida där spelare kunde se de achievements de samlat in och saknade, samt en allmän content-sida med FAQ och info om tävlingen.",
+		"text": "Ansvarade över och byggde frontenden för Considition 2023 (detta år i samarbete med Coca Cola Sverige).<br><br> Webben bestod av en dashboard med high-score-tavla och annat matnyttigt, en sida där spelare kunde visualisera resultatet av sina algoritmer på en karta, en sida där spelare kunde se de achievements de samlat in och saknade, samt en allmän content-sida med FAQ och info om tävlingen.",
 		"skills": ["SvelteKit", "OpenLayers", "C#", "SQL", "Azure Devops", "Figma"]
 	},
 	{

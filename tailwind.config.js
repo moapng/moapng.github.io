@@ -2,6 +2,11 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		fontFamily: {
+			Bungee: ['Bungee'],
+			Comfortaa: ['Comfortaa'],
+			sans: ['Comfortaa'] //default font
+		},
 		extend: {}
 	},
 	daisyui: {

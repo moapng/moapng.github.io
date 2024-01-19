@@ -58,7 +58,7 @@
 				{/if}
 			</button>
 		</li>
-		<MenuItem title={'Vem är jag'} href="vem">
+		<MenuItem title={'Vem är jag?'} href="/">
 			<svg
 				width="50"
 				height="58"
@@ -102,7 +102,7 @@
 				</defs>
 			</svg>
 		</MenuItem>
-		<MenuItem title={'Kompetenser & utbildningar'} href="kompetenser">
+		<MenuItem title={'Kompetenser & utbildningar'} href="/kompetenser">
 			<svg
 				width="50"
 				height="46"
@@ -125,7 +125,7 @@
 			</svg>
 		</MenuItem>
 		<div class="w-full absolute bottom-0">
-			<MenuItem title={'Github'} href="https://github.com/moapng">
+			<MenuItem title={'Github'} href="https://github.com/moapng" footerLink={true}>
 				<svg
 					width="50"
 					height="52"
@@ -141,8 +141,13 @@
 						/>
 					</g>
 				</svg>
+				
 			</MenuItem>
-			<MenuItem title={'LinkedIn'} href="">
+			<MenuItem
+				title={'LinkedIn'}
+				href="https://linkedin.com/in/moa-larsson-48b725267"
+				footerLink={true}
+			>
 				<svg
 					width="50"
 					height="58"
@@ -162,6 +167,3 @@
 		</div>
 	</ul>
 </nav>
-
-<style lang="scss">
-</style>

@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	let successMessage: string | undefined = '';
 	let errorMessage: string = '';
 
@@ -59,8 +59,6 @@
 {/if}
 
 <style lang="scss">
-	@import '$lib/styles/variables.scss';
-
 	.contact,
 	.submit {
 		display: flex;
@@ -87,19 +85,15 @@
 
 	input,
 	textarea {
-		background-color: $lavender-light;
-		border: 0.1rem solid $lavender-dark;
+		// background-color: $lavender-light;
+		// border: 0.1rem solid $lavender-dark;
 		border-radius: 1rem;
 
 		padding: 0.3rem;
-	}
-	input:focus,
-	textarea:focus {
-		background-color: $white;
 	}
 
 	button {
 		width: 30%;
 		align-self: flex-end;
 	}
-</style>
+</style> -->
