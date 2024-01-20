@@ -71,8 +71,8 @@
 			</svg>
 		</div>
 		<p class="py-6">
-			På fritiden tycker jag om att game:a, ta hand om mina krukväxter, tyndlyfta, måla & pyssla och
-			umgås med mina katter.
+			På fritiden tycker jag om att game:a, ta hand om mina krukväxter, tyngdlyfta, måla & pyssla
+			och umgås med mina katter.
 			<br />
 		</p>
 
