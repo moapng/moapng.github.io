@@ -1,31 +1,26 @@
 [
 	{
-		"title": "Gymnasieantagningen",
-		"imgSrc": "/gymnasieantagningen.png",
+		"title": "gr",
 		"text": "Mitt första uppdrag var hos Göteborgs Regionen, där jag bl.a. var ansvarig för tillgänglighetsanpassning av elevsidan på deras gymnasieantagningsweb. Var även en del förvaltning och hantering av buggar.",
 		"skills": ["React", "WCAG", "C#", "SQL", "Azure Devops"]
 	},
 	{
-		"title": "Volvo Lastvagnar",
-		"imgSrc": "/volvo1.png",
+		"title": "volvo",
 		"text": "Hos Volvo Lastvagnar fick jag lära mig jobba i ett större team och att följa scrum-principerna till punkt och pricka. <br>Det var även här som jag stötte på SvelteKit för första gången, och det var kärlek vid första ögonkastet. Sen dess har jag byggt alla hobby-projekt med det. <br><br>Uppdraget i sig handlade om omstruktureringen av Volvo Lastvagnars internsystem för administrering och hantering av felkoder. Vi gick från monolitisk arkitektur till microservices och microfrontends via av en portal för en sömlös användarupplevelse.",
 		"skills": ["SvelteKit", "WCAG", "C#", "SQL", "Azure Devops", "Scrum", "LuigiPortal"]
 	},
 	{
-		"title": "Nelly",
-		"imgSrc": "/nelly.png",
+		"title": "nelly",
 		"text": "Implementerade Ingrids (Nellys samarbetspartner) egna widgets för att informera kunder om beloppet som krävs för fri frakt. Skapade även en tracking-sida för kundernas paket.",
 		"skills": ["SvelteKit"]
 	},
 	{
-		"title": "Considition 2023",
-		"imgSrc": "/considition1.png",
-		"text": "Ansvarade över och byggde frontenden för årets Considition (detta år i samarbete med Coca Cola Sverige).<br><br> Webben bestod av en dashboard med high-score-tavla och annat matnyttigt, en sida där spelare kunde visualisera resultatet av sina algoritmer på en karta, en sida där spelare kunde se de achievements de samlat in och saknade, samt en allmän content-sida med FAQ och info om tävlingen.",
+		"title": "considition",
+		"text": "Ansvarade över och byggde frontenden för Considition 2023 (detta år i samarbete med Coca Cola Sverige).<br><br> Webben bestod av en dashboard med high-score-tavla och annat matnyttigt, en sida där spelare kunde visualisera resultatet av sina algoritmer på en karta, en sida där spelare kunde se de achievements de samlat in och saknade, samt en allmän content-sida med FAQ och info om tävlingen.",
 		"skills": ["SvelteKit", "OpenLayers", "C#", "SQL", "Azure Devops", "Figma"]
 	},
 	{
-		"title": "Displayer Gbgkontoret",
-		"imgSrc": "/displayergbg.png",
+		"title": "displayergbg",
 		"text": "Utveckling av ett system för att informera och engagera anställda genom att visa roliga aktiviteter på displayer runt kontoret.",
 		"skills": ["SvelteKit"]
 	}

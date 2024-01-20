@@ -1,31 +1,62 @@
 <script lang="ts">
-	import Box from '../lib/components/Box.svelte';
+	import Sidebar from './Sidebar.svelte';
 	import '$lib/styles/common.scss';
+	import { setContext } from 'svelte';
+	import { writable, type Writable } from 'svelte/store';
+	import { page } from '$app/stores';
+	import { onMount, onDestroy } from 'svelte';
+
+	let innerWidth: number;
+
+	const open: Writable<boolean> = writable(false);
+	setContext('open', open);
 </script>
 
-<div class="header">
-	<h1>Moa</h1>
-</div>
-<Box>
-	<slot />
-</Box>
+<svelte:window bind:innerWidth />
+<Sidebar />
+{#if innerWidth > 600}
+	<div
+		class="{$open
+			? 'translate-x-[320px]  w-[calc(100%_-_320px)]'
+			: 'translate-x-[82px] w-[calc(100%_-_82px)]'} h-screen"
+	>
+		<div class="h-24 w-full border-b-2 border-primary flex justify-between">
+			<a href="/" class="relative left-24 h-full btn btn-ghost text-primary font-normal text-4xl"
+				>Moa Larsson</a
+			>
+			<!-- <button class="h-full btn btn-primary text-3xl font-Bungee">kontakt</button> -->
+		</div>
+		<div class="flex divide-x-2 divide-primary h-[calc(100%_-_6rem)]">
+			<section class="py-0 xl:py-28 {$open ? 'px-5 xl:px-10' : 'px-10 xl:px-20'} w-1/2">
+				<slot />
+			</section>
+			<section class="py-5 px-10 xl:py-28 xl:px-40 w-1/2">
+				{#if $page.data.component}
+					<svelte:component this={$page.data.component} />
+				{/if}
+			</section>
+		</div>
+	</div>
+{:else if innerWidth <= 600}
+	<div
+		class="{$open
+			? 'translate-x-[320px]  w-[calc(100%_-_320px)]'
+			: 'translate-x-[82px] w-[calc(100%_-_82px)]'} h-screen"
+	>
+		<div class="h-24 w-full border-b-2 border-primary flex justify-between">
+			<a href="/" class="relative left-24 h-full btn btn-ghost text-primary font-normal text-2xl">
+				Moa Larsson
+			</a>
+			<!-- <button class="h-full btn btn-primary text-3xl font-Bungee">kontakt</button> -->
+		</div>
+		<div class="flex">
+			<section class="py-0 {$open ? 'px-5 xl:px-10' : 'px-10 xl:px-20'}">
+				<slot />
 
-<style lang="scss">
-	@import '$lib/styles/variables.scss';
-
-	.header {
-		border-radius: 0rem 0rem 4.375rem 4.375rem;
-		background: linear-gradient(180deg, $lavender-light 0%, $lavender-dark 100%);
-		border: 0.5rem solid $lavender-light;
-
-		width: 40rem;
-		height: 5rem;
-
-		padding: 0.5rem;
-
-		margin: auto;
-		margin-bottom: 4rem;
-
-		text-align: center;
-	}
-</style>
+				{#if $page.data.component}
+					<svelte:component this={$page.data.component} />
+				{/if}
+			</section>
+		</div>
+	</div>
+{/if}

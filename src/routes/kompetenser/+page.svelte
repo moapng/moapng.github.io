@@ -1,58 +1,33 @@
 <script lang="ts">
-	import JsSvg from '$lib/components/svgs/JsSvg.svelte';
-	import TsSvg from '$lib/components/svgs/TsSvg.svelte';
-	import ReactSvg from '$lib/components/svgs/ReactSvg.svelte';
-	import SvelteSvg from '$lib/components/svgs/SvelteSvg.svelte';
-	import HtmlSvg from '$lib/components/svgs/HtmlSvg.svelte';
-	import CssSvg from '$lib/components/svgs/CssSvg.svelte';
-	import NpmSvg from '$lib/components/svgs/NpmSvg.svelte';
-	import NodeSvg from '$lib/components/svgs/NodeSvg.svelte';
-	import CSvg from '$lib/components/svgs/CSvg.svelte';
-	import SqlSvg from '$lib/components/svgs/SqlSvg.svelte';
-	import ScrumSvg from '$lib/components/svgs/ScrumSvg.svelte';
-	import A11ySvg from '$lib/components/svgs/A11ySvg.svelte';
-	import PostmanSvg from '$lib/components/svgs/PostmanSvg.svelte';
-	import FigmaSvg from '$lib/components/svgs/FigmaSvg.svelte';
 </script>
 
 <svelte:head><title>Moas kompetenser</title></svelte:head>
-
-<h1>Mina kompetenser</h1>
-<div class="container">
-	<li>
-		<SvelteSvg />SvelteKit
-	</li>
-	<li><ReactSvg />React</li>
-	<li><TsSvg /> TypeScript</li>
-	<li><JsSvg />JavaScript</li>
-	<li><HtmlSvg />HTML5</li>
-	<li><CssSvg />CSS3</li>
-	<li><NpmSvg />npm</li>
-	<li><NodeSvg />nodeJS</li>
-	<li><A11ySvg />WCAG</li>
-	<li><FigmaSvg />Figma</li>
-	<li><ScrumSvg /> Scrum</li>
-	<li><CSvg /> C#</li>
-	<li><SqlSvg />SQL</li>
-	<li><PostmanSvg />Postman</li>
+<div class="flex h-1/4">
+	<h1 class="font-Bungee text-primary text-6xl my-auto">Mina kompetenser</h1>
 </div>
-
-<style lang="scss">
-	@import '$lib/styles/variables.scss';
-
-	li {
-		display: flex;
-		align-items: center;
-		
-		gap: 1rem;
-	}
-
-	:global(li svg) {
-		width: 3rem;
-		height: 3rem;
-	}
-
-	.container {
-		flex-direction: column;
-	}
-</style>
+<div class="mt-6">
+	<p>
+		Jag har gått ett gäng olika kurser & utbildningar under min tid hos Consid, många av dessa genom
+		deras traineeprogram som jag tog examen ur våren 2023, men även en del utöver det, vilket visar
+		på min oändliga törst efter kunskap
+	</p>
+	<ul class="mt-6 list-inside list-disc">
+		<li>UX design thinking, Consid Excellerate, 2023</li>
+		<li>UX-Writing, Consid Excellerate, 2023</li>
+		<li>Den Informella Projektledaren, Consid Excellerate, 2023</li>
+		<li>Workshop Facilitation, Consid Excellerate, 2023</li>
+		<li>Självledarskap, Consid Excellerate, 2023</li>
+		<li>Scrum, Consid Excellerate, 2023</li>
+		<li>Agila Metoder, Consid Excellerate, 2023</li>
+		<li>Intro till Python, Consid Excellerate, 2022</li>
+		<li>Intro till React, Consid Excellerate, 2022</li>
+		<li>WCAG för utvecklare, Consid Excellerate, 2022</li>
+		<li>Azure Fundamentals, Consid Excellerate, 2022</li>
+		<li>AWS Cloud Practitioner, Consid Excellerate, 2022</li>
+	</ul>
+	<p class="mt-6">Och innan dess gick jag</p>
+	<ul class="mt-6 list-inside list-disc">
+		<li>React.js, Folkuniversitetet, 2021</li>
+		<li>Systemutvecklare - Objektorienterad Systemutveckling, 2019-2021</li>
+	</ul>
+</div>
