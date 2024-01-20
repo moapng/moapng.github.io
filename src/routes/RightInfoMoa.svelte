@@ -1,15 +1,14 @@
 <script lang="ts">
 </script>
 
-<div class="flex flex-col justify-around h-full">
+<div class="flex flex-col justify-around md:h-full">
 	<img
 		src="/profilbild.png"
 		alt="En bild på en glasögonbeklädd, glad kvinna som gör hjärta-tecken med fingrarna med hav, berg och himmel i bakgrunden."
-		class="border-2 border-primary mx-auto w-72 h-72 object-cover"
+		class="border-2 border-primary mx-auto w-40 h-40 md:w-72 md:h-72 object-cover"
 	/>
-
 	<div>
-		<div class="flex justify-evenly pt-6">
+		<div class="flex justify-evenly pt-4 md:pt-6">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="#A26FF3"

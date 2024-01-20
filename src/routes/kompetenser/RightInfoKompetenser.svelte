@@ -21,9 +21,9 @@
 		import(`./svgs/${svgName.replace(/[^a-zA-Z0-9 ]/g, '')}Svg.svelte`);
 </script>
 
-<ul class="grid grid-cols-2 h-full">
+<ul class="grid grid-cols-3 max-md:pt-4 md:grid-cols-2 md:h-full">
 	{#each arrayOfSvgNames as svgName}
-		<li class="flex items-center gap-4 w-32">
+		<li class="flex items-center gap-4 w-24 md:w-32">
 			{#await getSvgComponent(svgName)}
 				<span class="loading loading-bars loading-lg" />
 			{:then { default: SvgComponent }}

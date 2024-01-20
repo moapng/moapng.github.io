@@ -4,8 +4,10 @@
 <svelte:head>
 	<title>Moas portfolio</title>
 </svelte:head>
-<div class="flex h-1/4">
-	<h1 class="font-Bungee text-primary text-6xl hyphens-manual my-auto">frontend&shy;utvecklare</h1>
+<div class="flex h-20 md:h-40">
+	<h1 class="font-Bungee text-primary text-3xl md:text-4xl lg:text-6xl hyphens-manual my-auto">
+		frontend&shy;utvecklare
+	</h1>
 </div>
 <div class="mt-6">
 	<p>
@@ -14,7 +16,7 @@
 		Webben skall vara lättläst och tillgänglig för alla, men det behöver inte betyda att vi tappar form
 		och stil; vi öppnar bara dörren för att fler skall kunna ta till sig designen.
 	</p>
-	<ul class="timeline timeline-vertical 2xl:timeline-horizontal">
+	<ul class="timeline timeline-vertical sm:timeline-horizontal md:timeline-vertical xl:timeline-horizontal -ms-40 sm:-ms-4 md:-ms-40 lg:-ms-4 my-6">
 		<li>
 			<div class="timeline-start">2007</div>
 			<div class="timeline-middle">

@@ -6,17 +6,17 @@
 	let open: Writable<boolean> = getContext('open');
 </script>
 
-<nav class="fixed {$open ? 'w-[320px]' : 'w-[82px]'}  border-r-2 border-primary h-full">
+<nav class="fixed {$open ? 'w-screen md:w-[320px]' : 'w-[82px]'}  border-r-2 border-primary h-full">
 	<ul class="menu bg-base-200 text-base-content p-0 m-0">
 		<li>
 			<button
-				class="h-24 border-b-2 border-primary justify-end pe-10 pt-4 mb-20"
+				class="h-16 md:h-24 border-b-2 border-primary justify-end pe-10 pt-4 mb-20"
 				on:click={() => open.set(!$open)}
 			>
 				{#if $open}
 					<svg
-						width="29"
-						height="45"
+						width="2rem"
+						height="2.5rem"
 						viewBox="0 0 29 45"
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
@@ -31,8 +31,8 @@
 					</svg>
 				{:else}
 					<svg
-						width="29"
-						height="45"
+						width="2rem"
+						height="2.5rem"
 						viewBox="0 0 29 45"
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,6 @@
 						/>
 					</g>
 				</svg>
-				
 			</MenuItem>
 			<MenuItem
 				title={'LinkedIn'}
