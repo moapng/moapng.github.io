@@ -22,5 +22,12 @@
 		<li>Intro till Python, Consid Excellerate, 2022</li>
 		<li>Intro till React, Consid Excellerate, 2022</li>
 		<li>WCAG för utvecklare, Consid Excellerate, 2022</li>
+		<li>Azure Fundamentals, Consid Excellerate, 2022</li>
+		<li>AWS Cloud Practitioner, Consid Excellerate, 2022</li>
+	</ul>
+	<p class="mt-6">Och innan dess gick jag</p>
+	<ul class="mt-6 list-inside list-disc">
+		<li>React.js, Folkuniversitetet, 2021</li>
+		<li>Systemutvecklare - Objektorienterad Systemutveckling, 2019-2021</li>
 	</ul>
 </div>

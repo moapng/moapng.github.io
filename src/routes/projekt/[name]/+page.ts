@@ -1,7 +1,7 @@
 import type { IProject } from '$lib/Interfaces';
 import projects from '$lib/projectData.json';
 import type { EntryGenerator } from './$types';
-import RightInfo from './RightInfoP.svelte';
+import RightInfo from './RightInfoProjekt.svelte';
 
 export const entries: EntryGenerator = () => {
 	let entries: any = [];
